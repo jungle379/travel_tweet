@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Pictweet</title>
+    <title>Travel_tweet</title>
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
     <%= csrf_meta_tags %>
@@ -11,7 +11,7 @@
       };
       (function() {
         var wf = document.createElement('script');
-        wf.src = ('hottps:' == document.location.protocol ? 'https' : 'http') +
+        wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
           '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
         wf.type = 'text/javascript';
         wf.async = 'true';
@@ -20,11 +20,29 @@
       })();
     </script>
   </head>
-
   <body>
     <header class="header">
       <div class="header__bar row">
-        <h1 class="grid-6"><a href="/">PicTweet</a></h1>
+        <h1 class="grid-6"><a href="/">Travel_Tweet</a></h1>
+         <!-- 🍔 -->
+        <input id="menu" type="checkbox" />
+        <label for="menu" class="open">外部リンク集</label>
+        <label for="menu" class="back"></label>
+        <!-- 🍔 -->
+
+        <aside>
+            <!-- 🍔 -->
+            <label for="menu" class="close">×</label>
+            <!-- 🍔 -->
+            <nav>
+                <ul>
+                    <li><%= link_to "JTB", "https://www.jtb.co.jp/?utm_medium=cpc&utm_source=google&utm_campaign=google_dom-htl_01-brand&utm_content=brand__txt_brand-2_&gclid=CjwKCAjwt-L2BRA_EiwAacX32RD2wuw9ZHSLufrGU94gu7vM6Ku3-tgGAv8jafb8WucUbJQOz62S_hoC1AgQAvD_BwE" %></li>
+                    <li><%= link_to "じゃらん", "https://www.jalan.net/" %></li>
+                    <li><%= link_to "ホテルドットコム", "https://jp.hotels.com/" %></li>
+                    <li><%= link_to "トラベルコ", "https://www.tour.ne.jp/" %></li>
+                </ul>
+            </nav>
+        </aside>
         <% if user_signed_in? %>
           <div class="user_nav grid-6">
           <span><%= current_user.nickname %>
@@ -50,7 +68,7 @@
 
     <footer>
       <p>
-        Copyright PicTweet 2019.
+        Copyright Travel_Tweet 2020.
       </p>
     </footer>
   </body>
