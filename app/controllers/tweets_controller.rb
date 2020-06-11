@@ -2,9 +2,8 @@ class TweetsController < ApplicationController
   before_action :set_tweet, only: [:edit, :show]
   before_action :move_to_index, except: [:index, :show, :search]
 
-#ページネート不要時は.page以降を削除すること
   def index
-    @tweets = Tweet.includes(:user).order("created_at DESC").page(params[:page]).per(5)
+    @tweets = Tweet.includes(:user).order("created_at DESC")
   end
 
   def new
