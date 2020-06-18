@@ -8,7 +8,5 @@ Rails.application.routes.draw do
     end
   end
   resources :users, only: [:show, :index]
-  resources :tweets, only: [:index, :show, :create] do
-    resources :likes, only: [:create, :destroy]
-  end
+  resources :tweets, only: [:index, :show, :create] 
 end

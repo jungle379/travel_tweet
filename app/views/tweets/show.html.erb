@@ -20,6 +20,31 @@
       </a>
     </span>
   </div>
+  <button id="up">いいね！</button>
+  <button id="down">いいね解除</button>
+  <span class="fa fa-heart" id='target'></span>
+     <a id="disp-count">0</a>
+  <script>
+  var disp_count = document.getElementById("disp-count");
+  var up = document.getElementById("up");
+  var down = document.getElementById("down");
+  var count = 0;
+
+up.addEventListener('click',function(){
+  count += 1;
+  disp_count.innerHTML = count;
+})
+down.addEventListener('click',function(){
+  count -= 1;
+  disp_count.innerHTML = count;
+});
+document.getElementById('up').addEventListener('click',function(){
+  document.getElementById('target').style.color='red';
+});
+document.getElementById('down').addEventListener('click',function(){
+  document.getElementById('target').style.color='';
+});
+</script>
   <div class="container">
     <% if current_user %>
       <%= form_with(model: [@tweet, @comment], local: true) do |form| %>

@@ -3,10 +3,5 @@
   <p><%= @nickname %>さんの投稿一覧</p>
   <% @tweets.each do |tweet| %>
   <%= render partial: "tweets/tweet", locals: { tweet: tweet } %>
-  <div>
-  <input type="button" id="btn1" value="いいね！" onclick="changeColor('target');" />
-  <input type="button" id="btn2" value="いいね解除" onclick="returnColor('target');" />
-  <p id="target" class="fa fa-heart like-btn"></p>
-</div>
 <% end %>
 </div>

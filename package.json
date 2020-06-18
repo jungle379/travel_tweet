@@ -1,5 +1,32 @@
 {
   "name": "travel_tweet",
   "private": true,
-  "dependencies": {}
+  "dependencies": {},
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.1.0",
+    "webpack": "^4.43.0"
+  },
+  "description": "This README would normally document whatever steps are necessary to get the application up and running.",
+  "version": "1.0.0",
+  "main": "webpack.cofig.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rm -rf dist/*.js && webpack",
+    "watch": "rm -rf dist/*.js && webpack -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jungle379/travel_tweet.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jungle379/travel_tweet/issues"
+  },
+  "homepage": "https://github.com/jungle379/travel_tweet#readme"
 }
