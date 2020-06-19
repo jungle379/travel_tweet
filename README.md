@@ -22,3 +22,5 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+*Pictweetに機能追加として、URLリンクを追加。また、いいね！機能を付与しています。

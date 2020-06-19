@@ -30,17 +30,17 @@
   var down = document.getElementById("down");
   var count = 0;
 
-up.addEventListener('click',function(){
+  up.addEventListener('click',function(){
   count += 1;
   disp_count.innerHTML = count;
-})
-down.addEventListener('click',function(){
+  });
+  down.addEventListener('click',function(){
   count -= 1;
   disp_count.innerHTML = count;
-});
-document.getElementById('up').addEventListener('click',function(){
-  document.getElementById('target').style.color='red';
-});
+  });
+  document.getElementById('up').addEventListener('click',function(){
+    document.getElementById('target').style.color='red';
+  });
 document.getElementById('down').addEventListener('click',function(){
   document.getElementById('target').style.color='';
 });

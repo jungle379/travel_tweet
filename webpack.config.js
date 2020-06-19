@@ -1,6 +1,6 @@
-export const entry = __dirname + "/src/main.js";
+export const entry = __dirname + "./src/main.js";
 export const output = {
-  path: __dirname + "/dist",
+  path: __dirname + "./app/views/layout",
   filename: "like-button.js"
 };
 export const module = {
