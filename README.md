@@ -1,26 +1,12 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Travel＿Tweet
 
-Things you may want to cover:
+＊このアプリはTECH：：CAMPにて作成したツイートアプリを元に、メニューバーをハンバーガーメニューで実装し、
+SNSに必須機能となっている、いいね！ボタンを「詳細」ページで押せるように実装しています。
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-*Pictweetに機能追加として、URLリンクを追加。また、いいね！機能を付与しています。
+# Technology Used
+・HTML
+・CSS
+・JavaScript
+・Ruby On Rails
