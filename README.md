@@ -6,7 +6,7 @@ Travel＿Tweet
 SNSに必須機能となっている、いいね！ボタンを「詳細」ページで押せるように実装しています。
 
 # Technology Used
-・HTML
-・CSS
-・JavaScript
-・Ruby On Rails
+・HTML  
+・CSS  
+・JavaScript  
+・Ruby On Rails  
